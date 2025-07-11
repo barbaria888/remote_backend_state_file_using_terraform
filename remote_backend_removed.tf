@@ -8,7 +8,8 @@ resource "google_storage_bucket" "test-bucket-for-state" {
   name        = "qwiklabs-gcp-02-09f042b3bf7a"
   location    = "US" # Replace with EU for Europe region
   uniform_bucket_level_access = true
-  force_destroy=true //else it wont get deleted by terraform
+  force_destroy=true 
+  //else it wont get deleted by terraform, will show error
 }
 
 terraform {
