@@ -9,6 +9,6 @@ resource "google_storage_bucket" "test-bucket-for-state" {
 }
 terraform {
   backend "local" {
-    path = "terraform/state/terraform.tfstate"
+    path = "terraform/state/terraform.tfstate" // locally stored on machine used to provision state
   }
 }
